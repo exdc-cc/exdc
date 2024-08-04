@@ -30,13 +30,7 @@ This smart contract provides 5 types of account groups:
 5. Broker Provider 
 - One of Buyer or Seller type.
 - This account allows private money transfer between buyer and seller. 
-- User can use this service to anonymize his payments for services or shops
-- To use for receiving money encrypt multiple wallets with the RSA-OAEP key provided by the broker as an array ```encrypt([wallet, wallet])``` and provide the brokerId in your shopId
-- Buyer encrypts his wallet during the ```createPurchase``` and supplies his brokerId after that encrypting the payload and signing the brokerId with his RSA-PSS, after that he invokes a request to the broker service after ```finalizePurchase``` or ```cancelPurchase```
-- If the shopkeeper or the buyer uses a broker the smart contract will halt the payout
-- The smart contract will await while the broker exhausts the ```createPurchase``` transaction balance 
-- Buyer and seller use different brokers in this way the buyer's broker then should invoke the shopkeeper's broker and the sellers broker makes the final transaction to the smart contract without knowing the buyers wallet but knowing the transactionId
-- The seller broker invokes the ```createPayout``` method on the smartcontract to all the multiple receiving wallets until the ```createPurchase``` balance is exhausted
+- User can use this service to anonymize his payments for services or purchases.
 
 6. Torrent Provider - this accounts allows to run webtorrent websocket dht for encrypted p2p data transfer
 
