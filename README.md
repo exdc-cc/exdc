@@ -1,4 +1,4 @@
-## STRPY smart contract workflow
+## EXDC whitepaper
 
 This smart contract provides 5 types of account groups:
 
@@ -11,7 +11,7 @@ This smart contract provides 5 types of account groups:
 4. Developer - This account publishes service types
 
 5. Smart Contract Owner
-- Provides the initial RSA-PSS public key everyone else is derived from
+- Provides the initial public key everyone else is derived from
 - This account validates and hosts the marketplace of marketplaces and the markeplace of services
 - This account hosts the reference initial services as a developer
 
